@@ -12,3 +12,5 @@ class Trainer
 end
 
 #sacha.pokemons.each_with_rel.select{|node, rel| node.name = "Pikachu"}
+
+#  after_create_commit { MessageBroadcastJob.perform_later(self) }

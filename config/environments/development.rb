@@ -57,6 +57,9 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
+
+  #Rails.application.config.action_cable.allowed_request_origins = ['http://127.0.01:3000','http://0.0.0.0:3000','http://localhost:3000']
+
   ## neo4j
   # config.neo4j.session_type = :server_db
   # config.neo4j.wait_for_connection = true

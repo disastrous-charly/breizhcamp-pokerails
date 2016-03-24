@@ -7,6 +7,9 @@ class ExchangesController < ApplicationController
   end
 
   def show
+    if !@trainer
+      @trainer = Trainer.find_by(name: cookies[:trainer_name])
+    end
   end
 
   def choose_trainer
