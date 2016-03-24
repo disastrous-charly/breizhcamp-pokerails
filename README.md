@@ -10,11 +10,13 @@ Neo4j is using CYPHER language for querying, but it's all under an ORM for us.
 CYPHER example :
 CREATE (n:`Pokemon` {props}) RETURN ID(n) | {:props=>{:uuid=>"a66d1e28-6a9b-49e3-9b1b-adfd132c8732", :created_at=>1458766500, :updated_at=>1458766531, :name=>"Métamorph"}}
 
+We are using ActionCable and Redis for the websocket part 
+
 
 open your terminal :
 ###to install gem
 bundle install
-###to generate model/controller/view
+###to generate model/controller/view and routes
 rails g scaffold Pokemon name:string create_at:datetime
 ###to launch the server
 rails s

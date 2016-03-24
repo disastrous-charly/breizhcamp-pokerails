@@ -4,6 +4,6 @@ class Town
 
   property :name, type: String
 
-
+    has_many :in, :town, type: :COME_FROM
 
 end

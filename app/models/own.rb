@@ -15,6 +15,6 @@ class Own
   property :nickname
 
   def do_this
-    #a callback
+    captured_at = DateTime.now
   end
 end
