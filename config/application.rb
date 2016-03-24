@@ -34,8 +34,8 @@ module Neomon
     # -- all .rb files in that directory are automatically loaded.
     config.neo4j.session_type = :server_db
     config.neo4j.wait_for_connection = true
-    #config.neo4j.session_path = "http://#{ENV.fetch("DB_PORT_7474_TCP_ADDR", "localhost")}:#{ENV.fetch("DB_PORT_7474_TCP_PORT", 7474)}"
-    config.neo4j.session_path = "http://localhost:7474"
+    config.neo4j.session_path = "http://#{ENV.fetch("DB_PORT_7474_TCP_ADDR", "localhost")}:#{ENV.fetch("DB_PORT_7474_TCP_PORT", 7474)}"
+    #config.neo4j.session_path = "http://localhost:7474"
 
     config.autoload_paths << Rails.root.join('lib')
   end

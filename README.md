@@ -1,28 +1,22 @@
-## README
+Hello world !
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample app in Rails 5, using ActionCable for real-time with websocket and Neo4j to manage data
 
-Things you may want to cover:
+Some info : REST API for Neo4j : http://neo4j.com/docs/stable/rest-api.html
 
-* Ruby version
+We are using the (AWESOME) Neo4jrb gem : https://github.com/neo4jrb/neo4j
+Neo4j is using CYPHER language for querying, but it's all under an ORM for us.
 
-* System dependencies
+CYPHER example :
+CREATE (n:`Pokemon` {props}) RETURN ID(n) | {:props=>{:uuid=>"a66d1e28-6a9b-49e3-9b1b-adfd132c8732", :created_at=>1458766500, :updated_at=>1458766531, :name=>"Métamorph"}}
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-Branch master :
-neo4j was resolved to 7.0.1, which depends on
-    activemodel (~> 4)
+open your terminal :
+###to install gem
+bundle install
+###to generate model/controller/view
+rails g scaffold Pokemon name:string create_at:datetime
+###to launch the server
+rails s
+###to launch the console
+rails c

@@ -1,5 +1,8 @@
 class Own
   include Neo4j::ActiveRel
+
+  ## A relationship is what define a link between two nodes
+
   before_save :do_this
 
   from_class :Trainer
@@ -8,7 +11,7 @@ class Own
   #creates_unique
 
   property :level, type: Integer
-  property :captured_at
+  property :captured_at, type: DateTime
   property :nickname
 
   def do_this
