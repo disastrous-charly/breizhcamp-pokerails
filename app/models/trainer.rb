@@ -1,7 +1,7 @@
 class Trainer
   include Neo4j::ActiveNode
   include Neo4j::Timestamps
-  property :name, type: String
+  property :name, type: String, constraint: :unique
   #property :created_at, type: DateTime
   #property :team
   #serialize :team

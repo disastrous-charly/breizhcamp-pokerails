@@ -1223,3 +1223,47 @@ Storage files: (filename : modification date - size)
 2016-03-24 07:13:51.399+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
 2016-03-24 07:13:54.049+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
 2016-03-24 07:13:55.110+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2016-03-24 09:09:17.456+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5118ms.
+2016-03-24 12:41:24.220+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Trainer(name) [provider: {key=lucene, version=1.0}]]
+2016-03-24 12:41:24.293+0000 INFO  [o.n.k.i.a.KernelSchemaStateStore] Schema state store has been cleared.
+2016-03-24 12:41:24.295+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Trainer(name) [provider: {key=lucene, version=1.0}]]
+2016-03-24 12:41:24.301+0000 INFO  [o.n.k.i.a.KernelSchemaStateStore] Schema state store has been cleared.
+2016-03-24 12:41:29.172+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Starting check pointing...
+2016-03-24 12:41:29.172+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Starting store flush...
+2016-03-24 12:41:29.179+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 44 to [/var/lib/neo4j/data/graph.db/neostore.counts.db.b], from [/var/lib/neo4j/data/graph.db/neostore.counts.db.a].
+2016-03-24 12:41:29.183+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 44 to [/var/lib/neo4j/data/graph.db/neostore.counts.db.b], from [/var/lib/neo4j/data/graph.db/neostore.counts.db.a].
+2016-03-24 12:41:29.237+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Store flush completed
+2016-03-24 12:41:29.238+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Starting appending check point entry into the tx log...
+2016-03-24 12:41:29.244+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Appending check point entry into the tx log completed
+2016-03-24 12:41:29.244+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [44]:  Check pointing completed
+2016-03-24 12:41:29.245+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-24 12:41:29.245+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-24 12:54:18.862+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Town(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-03-24 12:54:19.256+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Starting check pointing...
+2016-03-24 12:54:19.256+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Starting store flush...
+2016-03-24 12:54:19.303+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 45 to [/var/lib/neo4j/data/graph.db/neostore.counts.db.a], from [/var/lib/neo4j/data/graph.db/neostore.counts.db.b].
+2016-03-24 12:54:19.304+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 45 to [/var/lib/neo4j/data/graph.db/neostore.counts.db.a], from [/var/lib/neo4j/data/graph.db/neostore.counts.db.b].
+2016-03-24 12:54:19.357+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Store flush completed
+2016-03-24 12:54:19.357+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Starting appending check point entry into the tx log...
+2016-03-24 12:54:19.366+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Appending check point entry into the tx log completed
+2016-03-24 12:54:19.366+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [45]:  Check pointing completed
+2016-03-24 12:54:19.366+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-24 12:54:19.366+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-24 12:54:28.861+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Town(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-03-24 12:54:58.861+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Town(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-03-24 12:55:18.861+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Town(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-03-24 12:55:48.861+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Town(uuid) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-03-24 12:56:18.861+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Type(uuid) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-03-24 12:56:28.861+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Type(uuid) with 4 unique values in sample of avg size 4 taken from index containing 4 entries
+2016-03-24 12:56:38.861+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Type(uuid) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
+2016-03-24 12:58:08.861+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :Type(uuid) with 7 unique values in sample of avg size 7 taken from index containing 7 entries
+2016-03-24 12:59:19.370+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Starting check pointing...
+2016-03-24 12:59:19.370+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Starting store flush...
+2016-03-24 12:59:19.429+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 56 to [/var/lib/neo4j/data/graph.db/neostore.counts.db.b], from [/var/lib/neo4j/data/graph.db/neostore.counts.db.a].
+2016-03-24 12:59:19.430+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 56 to [/var/lib/neo4j/data/graph.db/neostore.counts.db.b], from [/var/lib/neo4j/data/graph.db/neostore.counts.db.a].
+2016-03-24 12:59:19.472+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Store flush completed
+2016-03-24 12:59:19.472+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Starting appending check point entry into the tx log...
+2016-03-24 12:59:19.478+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Appending check point entry into the tx log completed
+2016-03-24 12:59:19.478+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Check pointing completed
+2016-03-24 12:59:19.478+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-24 12:59:19.479+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.

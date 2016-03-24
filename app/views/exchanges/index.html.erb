@@ -1,1 +1,7 @@
 <h1> Welcome to the Pokecenter </h1>
+Who are you ?
+<%= form_for :exchanges, url: choose_trainer_path do |f| %>
+  <%= collection_select :exchange, "toto", @trainers, :name, :name %>
+  <br />
+  <%= f.submit "I choose you" %>
+<% end %>
