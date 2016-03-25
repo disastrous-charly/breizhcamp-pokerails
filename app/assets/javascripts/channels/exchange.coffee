@@ -18,3 +18,8 @@ $(document).on 'keypress', '[data-behavior~=chat_speaker]', (event) ->
     App.exchange.speak event.target.value
     event.target.value = ""
     event.preventDefault()
+
+$(document).on 'click', '[data-behavior~=exchange_pokemon]', (event) ->
+    #alert(event)
+    #App.exchange.propose_pokemon event.target.value
+    event.preventDefault()

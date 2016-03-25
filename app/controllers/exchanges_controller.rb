@@ -15,13 +15,6 @@ class ExchangesController < ApplicationController
   def choose_trainer
     @trainer = Trainer.find_by(name: exchange_params[:toto]) #toto is not a good variable name, don't do that at home!
     cookies[:trainer_name] = @trainer.name
-    #load pokemon team
-    # @trainer.pokemons.each_with_rel do |node,rel|
-    #   puts node.name
-    #   rel.level = 13
-    #   puts rel.level
-    # end
-    #@trainer.save!
     @trainer_team = @trainer.pokemons.to_a
     render :show
   end

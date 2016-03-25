@@ -13,5 +13,8 @@ class ExchangeChannel < ApplicationCable::Channel
     #Message.create!(content: data['message'])
   end
 
+  def propose_pokemon(data)
+    ProposeExchange.perform_later(data['name'],self.trainer_name)
+  end
 
 end

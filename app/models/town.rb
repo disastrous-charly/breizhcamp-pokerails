@@ -7,3 +7,5 @@ class Town
     has_many :in, :trainers, type: :COME_FROM
 
 end
+
+#Town.find_by(name: "Bourg Palette").trainers.pokemons.type.to_a.each{|t| puts t.name}

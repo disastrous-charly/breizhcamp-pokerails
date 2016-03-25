@@ -3,7 +3,7 @@
 <h3> Who do you want to exchange ? </h3>
 <p>Your team :<br />
 <% @trainer.pokemons.each_with_rel do |node,rel| %>
-    <a href="#" data-behavior="exchange_pokemon"  ><%= node.name %> <%= rel.level %> </a><br />
+    <a href="#" data-behavior="exchange_pokemon" data-name="<%=node.name%>" data-level="<%=rel.level%>" ><%= node.name %> <%= rel.level %> </a><br />
 <% end %>
 </p>
 <h3>Speak to other trainer</h3>
