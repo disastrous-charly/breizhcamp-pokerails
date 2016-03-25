@@ -1,14 +1,12 @@
 <h1> Salut <%= @trainer.name %></h1>
-<% @trainer.pokemons.each_with_rel do |node,rel| %>
-      <%= node.name %>
-      <%= rel.level %>
-<% end %>
-
-<%= @trainer_team %>
 
 <h3> Who do you want to exchange ? </h3>
-
-Speak to other trainer
+<p>Your team :<br />
+<% @trainer.pokemons.each_with_rel do |node,rel| %>
+    <a href="#" data-behavior="exchange_pokemon"  ><%= node.name %> <%= rel.level %> </a><br />
+<% end %>
+</p>
+<h3>Speak to other trainer</h3>
 <form>
   <input type="text" data-behavior="chat_speaker" />
 </form>

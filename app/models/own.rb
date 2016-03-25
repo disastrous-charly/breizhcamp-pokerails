@@ -3,7 +3,7 @@ class Own
 
   ## A relationship is what define a link between two nodes
 
-  before_save :do_this
+  before_create :define_properties
 
   from_class :Trainer
   to_class   :Pokemon
@@ -14,7 +14,8 @@ class Own
   property :captured_at, type: DateTime
   property :nickname
 
-  def do_this
-    captured_at = DateTime.now
+  def define_properties
+    self.captured_at = DateTime.now
+    self.level = rand(100)
   end
 end

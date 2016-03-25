@@ -10,8 +10,8 @@ class Pokemon
   #serialize :stats
 
   has_one :out, :evolution, type: :EVOLVE_IN, model_class: :Pokemon
-  #has_one :in, :pokemon, type: :EVOLVE_FROM
-  #has_many :in, :trainers, rel_class: :Own
+  has_one :out, :type, type: :HAS_TYPE
+  has_many :in, :trainers, rel_class: :Own
 end
 #s = Pokemon.create(stats: { ATK: 300, DEF: 250 })
 #t.pokemons << Pokemon.find_by(name: "Salamèche")

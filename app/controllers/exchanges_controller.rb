@@ -22,7 +22,7 @@ class ExchangesController < ApplicationController
     #   puts rel.level
     # end
     #@trainer.save!
-    @trainer_team = @trainer.pokemons.to_h
+    @trainer_team = @trainer.pokemons.to_a
     render :show
   end
 

@@ -2,9 +2,6 @@ class Trainer
   include Neo4j::ActiveNode
   include Neo4j::Timestamps
   property :name, type: String, constraint: :unique
-  #property :created_at, type: DateTime
-  #property :team
-  #serialize :team
 
   has_one :out, :town, type: :COME_FROM
   #has_many :out, :pokemons_collection, rel_class: :Own, model_class: :Pokemon
@@ -12,5 +9,3 @@ class Trainer
 end
 
 #sacha.pokemons.each_with_rel.select{|node, rel| node.name = "Pikachu"}
-
-#  after_create_commit { MessageBroadcastJob.perform_later(self) }

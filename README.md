@@ -10,7 +10,7 @@ Neo4j is using CYPHER language for querying, but it's all under an ORM for us.
 CYPHER example :
 CREATE (n:`Pokemon` {props}) RETURN ID(n) | {:props=>{:uuid=>"a66d1e28-6a9b-49e3-9b1b-adfd132c8732", :created_at=>1458766500, :updated_at=>1458766531, :name=>"Métamorph"}}
 
-We are using ActionCable and Redis for the websocket part 
+We are using ActionCable and Redis for the websocket part
 
 
 open your terminal :
@@ -22,3 +22,14 @@ rails g scaffold Pokemon name:string create_at:datetime
 rails s
 ###to launch the console
 rails c
+
+
+### add a town to a trainer
+trainer = Trainer.first
+town = Town.find_by(name: "Bourg Palette")
+trainer.town = town
+### get the trainers from a specific town
+town.trainers.to_a
+town.trainers.to_a[0].name
+### delete the relation
+trainer.town = nil
